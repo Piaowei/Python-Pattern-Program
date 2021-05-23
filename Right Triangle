@@ -1,0 +1,20 @@
+# 1st approach
+# RIGHT TRIANGLE with 2 for loops
+# Approach is first for loop to make Row then next loop to make Columns
+
+num = int(input("Input your number: "))
+for i in range(1,num+1):
+    for j  in range(i):                # iterate i times
+        print("*",end=" ")
+    print()                            # flow oges to 1st for loop with a new line
+    
+    
+#----------------------------------------------------------------------------------------------
+# 2nd approach
+# RIGHT TRIANGLE with a for loop
+# Approach is multiplication with i(iteration object)
+# or Concatenate with input/ i
+
+num = int(input("Input your number: "))
+for i in range(num):
+    print( "* "*(i+1))
