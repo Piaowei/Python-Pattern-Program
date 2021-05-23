@@ -1,0 +1,31 @@
+# 1st approach
+# INVERTED RIGHT TRIANGLE with 2 for loops
+# Approach is first for loop to make Row then next loop to make Columns
+
+
+num = int(input("Input your number: "))
+for i in range(5):
+
+    for j in range(num - i):
+        print("*", end=" ")
+    print()
+    
+#-------------------------------------------------------------------------------
+
+# 2nd approach
+# INVERTED RIGHT TRIANGLE with a for loops
+# # Approach is multiplication with i(iteration object) or Concatenate with input/ i
+
+num = int(input("Input your number: "))
+for i in range(num):
+    print((num - i) * "*")
+    
+#########################################
+#########################################
+
+Output with input 5 :
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
