@@ -1,0 +1,20 @@
+1st approach
+#LEFT TRIANGLE with  3 for loops
+
+num = int(input("Input your number: "))
+for i in range(num):              #this loop is for rows
+
+    for j in range(num-i-1):      #this loop is for space
+        print(end="  ")           # double space
+
+    for j in range(i+1):         # this loop is for columns(star)
+        print("*",end=" ")
+    print()
+#-----------------------------------------------------------------------------------
+2nd approach
+#LEFT TRIANGLE with  a for loop
+
+num = int(input("Input your number: "))
+
+for i in range(num):
+    print(2*(" ")*(num-i-1) +("* "*(i+1)))
