@@ -1,0 +1,26 @@
+# DIMOND SHAPE with 2 for loops
+# Approach is multiplication with i(iteration object) or Concatenate with input/ i
+
+num = int(input("Input your number: "))
+
+for i in range(num):                       #for upper part of dimond
+    print(" "*(num-i-1) + "* "*(i+1))
+
+for j in range(num-1,0,-1):                 #for upper lower of dimond
+    print(" "*(num-j) + "* "*(j))
+
+# for i in range(num-1):              #alternative logic for lower part
+#     print(" " * (i+1) + "* " * (num-1-i))
+
+
+output with input 5 -
+
+    * 
+   * * 
+  * * * 
+ * * * * 
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
