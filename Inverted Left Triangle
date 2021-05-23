@@ -1,6 +1,6 @@
 # 1st approach
 # INVERTED LEFT TRIANGLE with 2 for loops
-# Approach is first for loop to make Row then next loop to make Columns
+# Approach is first for loop to make Row,then next to make space after loop to make Columns
 
 num = int(input("Input your number: "))  #
 for i in range(num):  # this loop is for rows
