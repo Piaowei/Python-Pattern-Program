@@ -1,0 +1,42 @@
+# 1st approach
+# INVERTED PYRAMID SHAPE with 2 for loops
+# Approach is first for loop to make Row,then next to make space after loop to make Columns
+
+
+num = int(input("Input your number: "))
+
+for i in range(num):              # this loop is for rows
+
+    for j in range(i):            # this loop is for space
+        print(end=" ")
+
+    for j in range (num-i) :       # this loop is for column
+        print("*", end=" ")
+
+    print()
+
+#######################################################################
+
+# 2nd approach
+# INVERTED PYRAMID SHAPE with a for loops
+# # Approach is multiplication with i(iteration object) or Concatenate with input/ i
+
+num = int(input("Input your number: "))
+for i in range(num):
+    print((" "*i) +(num-i)*"* ")  # must take one space to multiply
+
+
+##########################
+##########################
+output -
+
+
+* * * * * 
+ * * * * 
+  * * * 
+   * * 
+    * 
+    
+    
+    
+    
