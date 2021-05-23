@@ -1,0 +1,33 @@
+# 1st approach
+# INVERTED LEFT TRIANGLE with 2 for loops
+# Approach is first for loop to make Row then next loop to make Columns
+
+num = int(input("Input your number: "))  #
+for i in range(num):  # this loop is for rows
+    for j in range(i):  # this loop is for space
+        print(end="  ")
+
+    for j in range(num - i):  # this loop is for column
+        print("*", end=" ")
+    print()
+
+#################################################################################
+
+# 2nd approach
+# INVERTED LEFT TRIANGLE with a for loops
+# Approach is multiplication with i(iteration object) or Concatenate with input/ i
+
+num = int(input("Input your number: "))
+for i in range(num):
+    print((2 * " " * i), "* " * (num - i))  # we can multipy " " with 2 or we can take double space
+
+###############################################################################
+###############################################################################
+
+Output with input 5
+
+* * * * * 
+  * * * * 
+    * * * 
+      * * 
+        * 
