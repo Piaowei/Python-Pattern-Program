@@ -1,0 +1,39 @@
+""""now leave first row and think to print * from the 2nd row and print * in 1st column and last column of the row
+in btween column will be fill with " "printing .
+
+now think about 1st and expected row what you want to fill with * to make A
+then in that expected row don't print *  in first colmn and in the last column. because those 
+first and last column are already got printed by first 2 line ligic I wrote"""""
+
+# A SHAPE with 2 for loops
+row = int(input("Input your row : "))
+col = int(input("Input your Column: "))
+
+for i in range(row):  # this loop is for rows
+    for j in range(col):  # this loop is for column
+
+        if ((j == 0 or j == col - 1) and i != 0) or ((i == 0 or i == 4) and (j > 0 and j < col - 1)):  # or (0>j<col-1
+
+            print('*', end=' ')  # double space to look good
+
+        else:
+            print(" ", end=" ")  # double space to looks good
+
+    print()
+
+
+
+######################################################
+######################################################
+
+output sample -
+
+Input your row : 7
+Input your Column: 5
+  * * *   
+*       * 
+*       * 
+*       * 
+* * * * * 
+*       * 
+*       * 
